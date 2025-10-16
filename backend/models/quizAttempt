@@ -1,0 +1,61 @@
+const quizAttemptSchema = new mongoose.Schema({
+  student: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'User',
+    required: true
+  },
+  quiz: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Quiz',
+    required: true
+  },
+  courseId: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Course',
+    required: true
+  },
+  answers: [{
+    questionId: String,
+    selectedAnswer: String,
+    isCorrect: Boolean,
+    topic: String
+  }],
+  score: {
+    type: Number,
+    required: true,
+    min: 0
+  },
+  totalPoints: {
+    type: Number,
+    required: true
+  },
+  percentage: {
+    type: Number,
+    min: 0,
+    max: 100
+  },
+  attemptNumber: {
+    type: Number,
+    default: 1
+  },
+  startTime: {
+    type: Date,
+    default: Date.now
+  },
+  endTime: {
+    type: Date
+  },
+  timeTaken: Number, // in seconds
+  topicPerformance: [{
+    topic: String,
+    correct: Number,
+    total: Number,
+    percentage: Number
+  }]
+}, { timestamps: true });
+
+// Index for faster leaderboard queries
+quizAttemptSchema.index({ quiz: 1, score: -1 });
+quizAttemptSchema.index({ student: 1, createdAt: -1 });
+
+module.exports = mongoose.model('QuizAttempt', quizAttemptSchema);
