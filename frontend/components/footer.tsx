@@ -138,7 +138,7 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Connect</h3>
             <div className="flex space-x-4">
               <Link
-                href="https://github.com/vedantlavale"
+                href="https://github.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white/70 hover:text-white transition-colors"
@@ -147,7 +147,7 @@ const Footer = () => {
                 <SocialIcon type="github" />
               </Link>
               <Link
-                href="https://linkedin.com/in/vedantlavale"
+                href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white/70 hover:text-white transition-colors"
@@ -155,15 +155,7 @@ const Footer = () => {
               >
                 <SocialIcon type="linkedin" />
               </Link>
-              <Link
-                href="https://www.vedant.works"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white/70 hover:text-white transition-colors"
-                aria-label="Portfolio"
-              >
-                <SocialIcon type="portfolio" />
-              </Link>
+              
             </div>
           </div>
         </div>

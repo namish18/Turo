@@ -221,7 +221,7 @@ export default function HeroSection() {
                 href="/"
                 className="block text-sm duration-150 hover:opacity-75"
               >
-                <span> Meet Our Customers</span>
+                <span> POWERED BY </span>
 
                 <ChevronRight className="ml-1 inline-block size-3" />
               </Link>
@@ -230,8 +230,8 @@ export default function HeroSection() {
               <div className="flex">
                 <Image
                   className="mx-auto h-5 w-fit dark:invert"
-                  src="https://html.tailus.io/blocks/customers/nvidia.svg"
-                  alt="Nvidia Logo"
+                  src="/node-js-icon.svg"
+                  alt="Node.js Logo"
                   height={20}
                   width={80}
                 />
@@ -240,9 +240,9 @@ export default function HeroSection() {
               <div className="flex">
                 <Image
                   className="mx-auto h-4 w-fit dark:invert"
-                  src="https://html.tailus.io/blocks/customers/column.svg"
-                  alt="Column Logo"
-                  height={16}
+                  src="/perplexity-ai-icon.svg"
+                  alt="Perplexity AI Logo"
+                  height={25}
                   width={80}
                 />
               </div>
@@ -258,8 +258,8 @@ export default function HeroSection() {
               <div className="flex">
                 <Image
                   className="mx-auto h-5 w-fit dark:invert"
-                  src="https://html.tailus.io/blocks/customers/nike.svg"
-                  alt="Nike Logo"
+                  src="https://html.tailus.io/blocks/customers/tailwindcss.svg"
+                  alt="Tailwind CSS Logo"
                   height={20}
                   width={80}
                 />
@@ -267,8 +267,8 @@ export default function HeroSection() {
               <div className="flex">
                 <Image
                   className="mx-auto h-5 w-fit dark:invert"
-                  src="https://html.tailus.io/blocks/customers/lemonsqueezy.svg"
-                  alt="Lemon Squeezy Logo"
+                  src="/google-gemini-icon.svg"
+                  alt="Google Gemini Logo"
                   height={20}
                   width={80}
                 />
@@ -276,8 +276,8 @@ export default function HeroSection() {
               <div className="flex">
                 <Image
                   className="mx-auto h-4 w-fit dark:invert"
-                  src="https://html.tailus.io/blocks/customers/laravel.svg"
-                  alt="Laravel Logo"
+                  src="https://html.tailus.io/blocks/customers/vercel.svg"
+                  alt="Vercel Logo"
                   height={16}
                   width={80}
                 />
@@ -285,8 +285,8 @@ export default function HeroSection() {
               <div className="flex">
                 <Image
                   className="mx-auto h-7 w-fit dark:invert"
-                  src="https://html.tailus.io/blocks/customers/lilly.svg"
-                  alt="Lilly Logo"
+                  src="/mongodb-icon.svg"
+                  alt="MongoDB Logo"
                   height={28}
                   width={80}
                 />
